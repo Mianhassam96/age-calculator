@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Push footer to the bottom */
+}
+
+.content {
+  flex: 1;
+  padding: 20px; /* Add padding to avoid footer overlap */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
